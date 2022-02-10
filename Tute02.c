@@ -17,33 +17,32 @@ Distance -> 50
 Amount = 30 x 50 + (50-30) x 40 = 2300*/
 
 #include <stdio.h>
-//diclare varibles
+
 int main() 
 {
- float total amount;
- int r_dist=0,dist=0;
-//get inputs
- print("Enter the distance:");
- scanf("%f",&dist);
+  float r_amount,t_amount, tempAmount;
+  int r_dist, dist=0;
 
- if(dist>=30)
- {
-   r-dist=dist-30;
-   tempamount=r_dist*40;
-   total amount=30*50+tempamount;
+  printf("Enter the distance: ");
+  scanf("%d",&dist);
 
-   printf("Amount is:%2f",total amount);
+  if (dist >= 30)
+  {
+    r_dist= dist-30;
+    tempAmount = r_dist*40.00;
+    t_amount=30*50 + tempAmount;
+
+    printf("Amount is: %.2f", t_amount);
    
- }
- else
- {
-   total amount=dist*50.00;
-   printf("Amount is:%2f",total amount);
- }
-//end of the diclaration
- return 0;
-}
+  }
+  else
+  {
+    t_amount=dist*50.00;
+    printf("Amount is: %.2f", t_amount);
 
+  }
+  return 0;
+}
 
 
 
