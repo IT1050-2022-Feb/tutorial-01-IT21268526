@@ -4,21 +4,21 @@
 
 #include <stdio.h>
 
-int main() //main function
+int main() // main function
 {
-  float marks1,marks2,total,average=0;
-//get inputs
-  printf("Enter mark1:");
-  scanf("%f",&marks1);
+  float marks1, marks2, total, average=0;
 
-  printf("Enter mark2:");
-  scanf("%f",&marks2);
+  printf("Please Enter marks of subject 1: ");// Taking inputs
+  scanf("%f", &marks1);
 
-  total=marks1+marks2;
-  average=total/2;
+  printf("Please Enter marks of subject 2: ");
+  scanf("%f", &marks2);
 
-  printf("The average is :%2f",average);
-  
+  total = marks1 + marks2;// calculations
+  average = total/2;
+
+  printf("The average is : %.2f", average);// Output
+
   return 0;
 }
 
